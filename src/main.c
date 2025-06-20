@@ -611,9 +611,10 @@ static void onWebWinOpen()
         return; 
     }
     
-    webWin->username = confData.user;
-    webWin->authScript = strreplace(confData.authScript, "[PASSWORD]", passw);
+    gchar* temp = strreplace(confData.authScript, "[USERNAME]", confData.user);
+    webWin->authScript = strreplace(temp, "[PASSWORD]", passw);
     secret_password_free(passw);
+    g_free(temp);
     
     webWin->exitScriptSign = confData.exitScriptSign;
     webWin->exitScript = confData.exitScript;
@@ -778,7 +779,7 @@ typedef struct
 static void
 appActivate (GtkApplication *app, Args* args)
 {
-    g_print("MD Router Control JS 2.3.1      18.06.2025\n");
+    g_print("MD Router Control JS 2.3.2      20.06.2025\n");
 
     gchar *baseName = g_path_get_basename(args->argv[0]);
     gchar *configDir = g_get_user_config_dir();

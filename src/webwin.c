@@ -163,8 +163,6 @@ WebWindow *webWindowCreate(gchar* title)
     webWin->status = wsEmpty;
     //webWin->rect;
     webWin->uri = 0;
-    webWin->username = 0;
-    webWin->passw = 0;
     webWin->exitScriptSign = 0;
     webWin->exitScript = 0;
     webWin->authScript = 0;

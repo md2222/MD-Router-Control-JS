@@ -15,11 +15,9 @@ typedef struct {
     enum {  wsEmpty, wsCreated, wsLoad, wsLoaded, wsClose } status;
     GdkRectangle rect;
     gchar* uri;
-    gchar* username;
-    gchar* passw;
+    gchar* authScript;
     gchar* exitScriptSign;
     gchar* exitScript;
-    gchar* authScript;
     void (*message)(struct WebWindow* ww, gchar* text);
     void (*onClose)(struct WebWindow* ww);
 } WebWindow;
