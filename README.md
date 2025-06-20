@@ -8,15 +8,15 @@ Based on webkit2gtk. This version for JavaScript authorization on router. TP-Lin
 After closing the program, a configuration file will appear. ~/.config/mdrctrl.conf\
 It will contain settings for scripts.\
 \
-authScript - Authorization script that contains username and password.
-The script must contain placeholders for substitution. \[USERNAME\] and \[PASSWORD\]
-It can be a password only.
+authScript - Authorization script that contains username and password.\
+The script must contain placeholders for substitution. \[USERNAME\] and \[PASSWORD\]\
+It can be a password only.\
 For example, $\("\#pc-login-password"\)\.val\("\[PASSWORD\]"\); $\("\#pc-login-btn"\)\.click\(\);\
 \
-exitScriptSign - Script that should return a string as a sign that you have been authorized and are on a working page.
+exitScriptSign - Script that should return a string as a sign that you have been authorized and are on a working page.\
 For example, $\("\#topLogout"\)\.attr\("href"\);\
 \
-exitScript - Exit script.
+exitScript - Exit script.\
 For example, $\("\#topLogout"\).click\(\);\
 \
 To find scripts, you need to look at the page source in a browser and know a little JavaScript.\
