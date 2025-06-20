@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/app">
+    <file>settings.ui</file>
+    <file>icons/mdrctrl.png</file>
+    <file>icons/trayIcon-ok.png</file>
+    <file>icons/trayIcon-not.png</file>
+    <file>icons/trayIcon-test.png</file>
+  </gresource>
+</gresources>
