@@ -21,6 +21,7 @@ For example, \$\("\#topLogout"\).click\(\);\
 \
 To find scripts, you need to look at the page source in a browser and know a little JavaScript.\
 \
+DISCLAIMER\
 \
 MD Router Control JS is provided "as is", with absolutely no warranty expressed or implied. 
 Any use is at your own risk. Author not responsible for any damage or lost data.
